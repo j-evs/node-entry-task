@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>NodeJS entry task</title>
+        <meta name="description" content="NodeJS Entry Task">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link rel="icon" type="image/png" href="./favicon.ico" sizes="192x192">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico">
+    </head>
+    <body>
+        <section class="server-demo">
+            <form class="server-demo__form" novalidate action="https://api.myjson.com/bins/tbnfx" id="myForm">
+                <label for="fio">Ф.И.О.</label>
+                <input type="text" name="fio" id="fio">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+                <button type="submit" id="submitButton">Отправить</button>
+            </form>
+            <div class="server-demo__settings settings">
+                <h2 class="settings__header">Server response settings</h2>
+                <form class="settings__form " id="settings">
+                    <input type="radio" name="setting" value="success" id="success" checked>
+                    <label for="success">Success</label>
+                    <input type="radio" name="setting" value="error" id="error">
+                    <label for="error">Error</label>
+                    <input type="radio" name="setting" value="progress" id="progress">
+                    <label for="progress">Progress</label>
+                </form>
+                <p class="settings__info">Server will respond with: <span id="settings-value">success</span></p>
+            </div>
+            <div class="server-demo__result">
+                <div id="resultContainer"></div>
+            </div>
+        </section>
+        <img class="logo" src="./Yandex_Money_rgb_ru.png" alt="Yandex Money">
+        <script defer src="index.js"></script>
+    </body>
+</html>
